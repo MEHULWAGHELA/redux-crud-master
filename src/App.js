@@ -19,7 +19,7 @@ function App() {
           <Route path='/form' element={<FormComponent />} >
             <Route path=':number' />
           </Route>
-          {/* <Route path='/' to={<Navigate to='/form' />} /> */}
+          <Route path='/' element={<Navigate to='/form' />} />
           <Route path='/table' element={<TableComponents />} />
         </Routes>
       </BrowserRouter>
